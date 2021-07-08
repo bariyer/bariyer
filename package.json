@@ -1,0 +1,11 @@
+{
+  "name": "koauth",
+  "description": "Koauth is an Authorization wrapper library for both sides",
+  "version": "0.0.0",
+  "workspaces": {
+    "packages": [
+      "examples/*",
+      "packages/*"
+    ]
+  }
+}
