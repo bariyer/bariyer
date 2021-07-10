@@ -1,7 +1,7 @@
 {
   "name": "koauth",
-  "description": "Koauth is an Authorization wrapper library for both sides",
-  "version": "0.0.0",
+  "description": "Koauth is an authorization middleware library for express.js",
+  "version": "0.0.1",
   "workspaces": {
     "packages": [
       "examples/*",
