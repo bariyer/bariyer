@@ -39,6 +39,8 @@ app.get("/", (req, res) => {
 
 app.listen(process.env.PORT || 3000, () => {
   console.info(
-    `Example express server for basic auth listening at http://localhost:${port}`
+    `Example express server for basic auth listening at http://localhost:${
+      process.env.PORT || 3000
+    }`
   );
 });
