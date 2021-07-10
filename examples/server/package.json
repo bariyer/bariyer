@@ -1,15 +1,16 @@
 {
   "name": "@koauth/example-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "basic-auth:start": "node basicAuth.js",
-    "basic-auth:watch": "nodemon basicAuth.js"
+    "basic:start": "node basic/",
+    "basic:watch": "nodemon --watch basic/ basic/"
   },
   "dependencies": {
     "@koauth/server": "workspace:packages/server",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.11"
   }
 }
