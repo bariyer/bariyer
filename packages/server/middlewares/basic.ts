@@ -7,7 +7,7 @@ export default function basicAuth(username: string, password: string) {
       USER_PASS_REGEXP = /^([^:]*):(.*)$/;
 
     if (!req.headers.authorization) {
-      return res.status(401).json({ error: "Authorization header missing" });
+      return res.status(401).json({ error: "Authorization header missing!" });
     }
 
     const _match_credential = CREDENTIALS_REGEXP.exec(
@@ -15,7 +15,7 @@ export default function basicAuth(username: string, password: string) {
     );
 
     if (!_match_credential) {
-      return res.status(401).json({ error: "Incorrect authorization type" });
+      return res.status(401).json({ error: "Incorrect authorization type!" });
     }
 
     const _credential = USER_PASS_REGEXP.exec(
@@ -23,15 +23,13 @@ export default function basicAuth(username: string, password: string) {
     );
 
     if (!_credential) {
-      return res.status(401).json({ error: "Header incorrect credential" });
+      return res.status(401).json({ error: "Header incorrect credential!" });
     }
-
-    console.log(_credential);
 
     if (username !== _credential[1]) {
       return res.status(401).json({ error: "Username incorrect!" });
     } else if (password !== _credential[2]) {
-      return res.status(401).json({ error: "Password incorrect" });
+      return res.status(401).json({ error: "Password incorrect!" });
     } else {
       next();
     }
