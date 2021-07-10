@@ -1,6 +1,6 @@
 {
   "name": "@koauth/server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "build:cjs": "tsc -p tsconfig-cjs.json",
     "build:cjs:watch": "tsc -w -p tsconfig-cjs.json",
