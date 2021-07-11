@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const ms = require("ms");
 const { Response, Request, NextFunction } = require("express");
 
-const { AuthorizationError, DotEnvError } = require("@koauth/server");
+const { AuthorizationError, DotEnvError } = require("@bariyer/server");
 const { JsonDB } = require("../db");
 
 const db = new JsonDB(path.resolve(__dirname, "../db/users.json"));

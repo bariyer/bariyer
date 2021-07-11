@@ -1,5 +1,5 @@
 {
-  "name": "@koauth/server",
+  "name": "@bariyer/server",
   "version": "0.1.0",
   "scripts": {
     "build:cjs": "tsc -p tsconfig-cjs.json",
@@ -10,6 +10,9 @@
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/"
   ],

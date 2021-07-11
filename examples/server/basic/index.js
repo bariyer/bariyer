@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 
-const { middlewares, DotEnvError } = require("@koauth/server");
+const { middlewares, DotEnvError } = require("@bariyer/server");
 require("dotenv").config({ path: path.resolve(__dirname, "./.env") });
 
 const app = express();

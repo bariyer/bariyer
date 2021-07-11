@@ -5,11 +5,11 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@koauth/example-server@workspace:examples/server":
+"@bariyer/example-server@workspace:examples/server":
   version: 0.0.0-use.local
-  resolution: "@koauth/example-server@workspace:examples/server"
+  resolution: "@bariyer/example-server@workspace:examples/server"
   dependencies:
-    "@koauth/server": "workspace:packages/server"
+    "@bariyer/server": "workspace:packages/server"
     "@types/bcrypt": ^5.0.0
     "@types/jsonwebtoken": ^8.5.4
     bcrypt: ^5.0.1
@@ -22,9 +22,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@koauth/server@workspace:packages/server":
+"@bariyer/server@workspace:packages/server":
   version: 0.0.0-use.local
-  resolution: "@koauth/server@workspace:packages/server"
+  resolution: "@bariyer/server@workspace:packages/server"
   dependencies:
     "@types/bcrypt": ^5.0.0
     "@types/express": ^4.17.13
@@ -336,6 +336,12 @@ __metadata:
   checksum: 690643f3009a04289ac401079de5a780aae452f7625fb2884051cc847b231e6521ee15dd6430b066d3cf4bd8bb00bb7ff55b7d134f34b8f0b8c043806796f94e
   languageName: node
   linkType: hard
+
+"bariyer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "bariyer@workspace:."
+  languageName: unknown
+  linkType: soft
 
 "bcrypt@npm:^5.0.1":
   version: 5.0.1
@@ -1409,12 +1415,6 @@ fsevents@~2.3.2:
   checksum: 6bf032ee504f27e00ae3a366c7e0ca5d93b8f947672871568f2a1456bf56d1bc4e55555158a45188d14483c4c38d0fa1dc7f0585b0d6c640f8e79abc9b4d3162
   languageName: node
   linkType: hard
-
-"koauth@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "koauth@workspace:."
-  languageName: unknown
-  linkType: soft
 
 "latest-version@npm:^5.0.0":
   version: 5.1.0

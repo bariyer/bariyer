@@ -1,6 +1,6 @@
 {
-  "name": "koauth",
-  "description": "Koauth is an authorization middleware library for express.js",
+  "name": "bariyer",
+  "description": "bariyer is an authorization middleware library for express.js",
   "version": "0.1.0",
   "workspaces": {
     "packages": [

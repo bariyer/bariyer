@@ -1,1 +1,1 @@
-# @koauth/server example
+# @bariyer/server example
