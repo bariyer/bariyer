@@ -1,0 +1,7 @@
+{
+  headerMissing: "Authorization header missing!",
+  authorizationType: "Authorization type isn't the Basic",
+  incorrectCredential: "Incorrect credential!",
+  usernameIncorrect: "Username is incorrect!",
+  passwordIncorrect: "Password is incorrect!",
+}

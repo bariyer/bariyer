@@ -1,0 +1,10 @@
+{
+  "name": "@bariyer/types",
+  "version": "0.0.0",
+  "exports": {
+    "default": "./index.d.ts"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.5"
+  }
+}

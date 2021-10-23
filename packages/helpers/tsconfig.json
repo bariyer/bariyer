@@ -1,0 +1,7 @@
+{
+  "extends": "@bariyer/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist/esm",
+    "baseUrl": "."
+  }
+}

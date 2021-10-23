@@ -1,0 +1,31 @@
+{
+  "name": "@bariyer/core",
+  "version": "0.0.0",
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig-cjs.json",
+    "build:cjs@watch": "tsc -w -p tsconfig-cjs.json",
+    "build:esm": "tsc",
+    "build:esm@watch": "tsc -w",
+    "prepublishOnly": "tsc -p tsconfig-cjs.json && tsc",
+    "build": "tsc -p tsconfig-cjs.json && tsc"
+  },
+  "files": [
+    "index.ts",
+    "index.d.ts"
+  ],
+  "main": "./index.ts",
+  "exports": {
+    "require": {
+      "default": "./dist/cjs/index.js"
+    },
+    "import": {
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "devDependencies": {
+    "@bariyer/types": "workspace:server/types"
+  },
+  "dependencies": {
+    "@bariyer/tsconfig": "workspace:config/tsconfig"
+  }
+}

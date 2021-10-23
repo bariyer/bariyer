@@ -1,1 +1,0 @@
-# @bariyer/server example

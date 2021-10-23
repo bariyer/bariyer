@@ -1,0 +1,20 @@
+{
+  "extends": "@bariyer/tsconfig",
+  "compilerOptions": {
+    "outDir": "./dist/esm",
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "types"],
+    "types": ["@types/jest", "@types/jsonwebtoken"]
+  },
+  "exclude": ["tests", "dist"],
+  "compileOnSave": true,
+  "ts-node": {
+    "moduleTypes": {
+      "jest.config.ts": "cjs"
+    },
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ES6"
+    }
+  }
+}

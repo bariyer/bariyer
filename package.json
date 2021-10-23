@@ -1,11 +1,31 @@
 {
   "name": "bariyer",
-  "description": "bariyer is an authorization middleware library for express.js",
   "version": "0.1.0",
+  "description": "Bariyer 🚧 is an authorization middleware library for express & fastify",
+  "keywords": [
+    "bariyer",
+    "middleware",
+    "express",
+    "fastify",
+    "authentication",
+    "expresjs",
+    "authorization",
+    "fastifyjs"
+  ],
   "workspaces": {
     "packages": [
+      "packages/*",
       "examples/*",
-      "packages/*"
+      "server/*",
+      "client/*",
+      "config/*",
+      "server/**/*",
+      "client/**/*"
     ]
-  }
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.17.0",
+    "typescript": "^4.4.4"
+  },
+  "packageManager": "yarn@3.0.2"
 }
